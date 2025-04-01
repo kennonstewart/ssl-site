@@ -32,9 +32,9 @@ export default function RootLayout({
             <span className="text-xl font-bold">Second Street Labs</span>
             <ul className="flex gap-4 text-sm">
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/about">About</a></li>
-              <li><Link href="/work">Work</a></li>
-              <li><Link href="/contact">Contact</a></li>
+              <li><Link href="/about">About</Link></li>
+              <li><Link href="/work">Work</Link></li>
+              <li><Link href="/contact">Contact</Link></li>
             </ul>
           </nav>
         </header>
@@ -48,7 +48,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-import Link from 'next/link';
-
-<Link href="/">Home</Link>
