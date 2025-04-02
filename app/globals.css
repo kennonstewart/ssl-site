@@ -12,8 +12,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
 body {
-  background-image: url('/images/power-plant.jpeg');
+  background-color:#F2F7F9;
   background-size: cover;
   background-position: center;
   font-family: Arial, Helvetica, sans-serif;  
@@ -35,7 +39,7 @@ body {
 
 .gradient-text {
   display: inline;
-  background: linear-gradient(90deg, #ff7e5f, #fee67b, #ff7e5f);
+  background: linear-gradient(90deg, #17a3f5, #d8e4ff, #17a3f5);
   background-size: 300%;
   background-position: 0% 50%;
   -webkit-background-clip: text;
