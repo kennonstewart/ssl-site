@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Second Street Labs',
-  description: 'Scroll-driven storytelling for the modern data world',
+  description: "Detroit's Analytics Studio.",
 };
 
 
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} bg-white`}>
-        <header className="py-6 px-8 border-b">
+        <header className="py-6 px-8 border-transparent">
           <nav className="max-w-5xl mx-auto flex justify-between items-center">
             <span className="text-xl font-bold gradient-text">Second Street Labs</span>
             <ul className="flex gap-4 text-sm">
@@ -41,7 +41,7 @@ export default function RootLayout({
 
         <main className="max-w-5xl mx-auto">{children}</main>
 
-        <footer className="text-sm text-center py-6 border-t">
+        <footer className="text-sm text-center py-6 border-transparent">
           © {new Date().getFullYear()} Second Street Labs
         </footer>
       </body>
