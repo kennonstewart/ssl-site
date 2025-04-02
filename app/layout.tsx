@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} bg-white`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} bg-white text-white`}>
         <header className="py-6 px-8 border-transparent">
           <nav className="max-w-5xl mx-auto flex justify-between items-center">
             <span className="text-xl font-bold gradient-text">Second Street Labs</span>
