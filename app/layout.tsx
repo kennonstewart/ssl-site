@@ -18,7 +18,6 @@ export const metadata: Metadata = {
   description: "Detroit's Analytics Studio.",
 };
 
-
 export default function RootLayout({
   children,
 }: {
@@ -27,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} bg-white text-blue`}>
-        <header className="py-6 px-12 border-transparent text-transform uppercase">
+        <header className="fixed top-0 left-0 w-full bg-transparent z-50 py-6 px-12 border-transparent text-transform uppercase">
           <nav className="max-w-5xl mx-auto flex justify-between items-center">
             <span className="text-xl font-bold gradient-text">Second Street Labs</span>
             <ul className="flex gap-4 text-sm">
@@ -39,7 +38,7 @@ export default function RootLayout({
           </nav>
         </header>
 
-        <main className="max-w-5xl mx-auto">{children}</main>
+        <main className="max-w-5xl mx-auto pt-[96px]">{children}</main>
 
         <footer className="text-sm text-center py-6 border-transparent">
           © {new Date().getFullYear()} Second Street Labs

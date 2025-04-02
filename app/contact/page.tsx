@@ -1,3 +1,5 @@
+"use client";
+
 export default function ContactPage() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4 text-center">
@@ -5,17 +7,11 @@ export default function ContactPage() {
       <p className="max-w-xl text-lg mb-4">
         Drop us a line. We’d love to hear from you.
       </p>
-      <a
-        href="mailto:hi@secondstreetlabs.com"
-        className="text-blue-600 hover:underline text-lg mb-4"
-      >
-        hello@secondstreetlabs.com
-      </a>
       <button
         onClick={() => window.location.href = 'mailto:hi@secondstreetlabs.com'}
-        className="mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+        className="mt-4 px-6 py-2 bg-blue-300 text-white rounded hover:bg-blue-500 text-transform uppercase tracking-widest transition duration-300 ease-in-out"
       >
-        Send Email
+        Say Hi
       </button>
     </div>
   );
