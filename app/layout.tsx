@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} bg-white text-blue`}>
-        <header className="fixed top-0 left-0 w-full bg-transparent z-50 py-6 px-12 border-transparent text-transform uppercase">
+        <header className="fixed top-0 left-0 w-full bg-background z-50 py-6 px-12 border-transparent text-transform uppercase">
           <nav className="max-w-5xl mx-auto flex justify-between items-center">
             <span className="text-xl font-bold gradient-text">Second Street Labs</span>
             <ul className="flex gap-4 text-sm">

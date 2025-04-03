@@ -14,7 +14,7 @@ export default function ScrollSection({ title, content }: ScrollSectionProps) {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-bold text-center text-transform uppercase mb-4 tracking-widest"
+        className="text-5xl font-bold text-center text-transform uppercase mb-4 tracking-widest"
       >
         <span className="gradient-text">{title}</span>
       </motion.h2>
@@ -22,7 +22,7 @@ export default function ScrollSection({ title, content }: ScrollSectionProps) {
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="text-lg max-w-xl"
+        className="text-xl max-w-xl"
       >
         {content}
       </motion.p>
