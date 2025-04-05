@@ -1,19 +1,21 @@
 'use client';
 
 import { useEffect } from 'react';
-import Reveal from 'reveal.js';
 import 'reveal.js/dist/reveal.css';
-import 'reveal.js/dist/theme/white.css'; // You can choose other themes like 'white', 'league', etc.
 
 export default function RevealPresentation() {
   useEffect(() => {
-    // Ensure Reveal.js is only initialized in the browser
-    if (typeof window !== 'undefined') {
-      const deck = new Reveal();
-      deck.initialize();
+    // Dynamically import Reveal.js to ensure it's only loaded in the browser
+    async function initializeReveal() {
+      if (typeof window !== 'undefined') {
+        const Reveal = (await import('reveal.js')).default;
+        const deck = new Reveal();
+        deck.initialize();
+      }
     }
-  }, []);
 
+    initializeReveal();
+  }, []);
   return (
     <div className="reveal">
       <div className="slides">

@@ -22,20 +22,15 @@ export default function AboutPage() {
             Kennon Stewart
           </h1>
           <p className="text-lg">
-            Kennon is an Oakland-County native who spent the past few years building ML at 
-            companies like Amazon and HP Inc. He's back in the city of Detroit because there 
-            is nowhere better to build the next wave of Artificial Intelligence.
+            Kennon is a engineer and scientist with a passion for data and technology. He's spent
+            the past few years building teams and products at companies like Amazon and HP, and is now 
+            focused on building a data ecosystem in Detroit.
             <br />
             <br />
             When he's not coding in Midtown, Detroit, you can find him at the nearest coffee shop
             or his mother's front porch.
           </p>
         </div>
-      </div>
-
-      {/* Pitch Presentation */}
-      <div className="mt-16 w-full max-w-5xl">
-        <RevealPresentation />
       </div>
     </div>
   );
